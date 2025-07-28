@@ -7,9 +7,9 @@ const Navigation = ({ user, navLinks, activeSection, scrollY, isLoaded }) => {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrollY > 50 ? 'bg-black/50 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex justify-between items-center h-20">
-            <div className={`text-2xl font-bold transition-all duration-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex justify-between items-center h-16 sm:h-20">
+            <div className={`text-xl sm:text-2xl font-bold transition-all duration-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'}`}>
               <a href="#hero" className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-pulse">{user.initials}</a>
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -38,16 +38,16 @@ const Navigation = ({ user, navLinks, activeSection, scrollY, isLoaded }) => {
 
       {/* Full Screen Mobile Menu */}
       <div className={`fixed inset-0 bg-black bg-opacity-95 backdrop-blur-lg transition-all duration-500 z-30 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-        <div className="flex flex-col items-center justify-center h-full">
-          <div className="text-center space-y-8">
+        <div className="flex flex-col items-center justify-center h-full px-4">
+          <div className="text-center space-y-6 sm:space-y-8">
             {navLinks.map((link, index) => (
-              <a key={link.name} href={link.href} className={`block text-5xl font-bold hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-400 hover:bg-clip-text hover:text-transparent transition-all duration-500 transform ${isMenuOpen ? `translate-y-0 opacity-100` : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${index * 100 + 200}ms` }} onClick={() => setIsMenuOpen(false)}>{link.name}</a>
+              <a key={link.name} href={link.href} className={`block text-3xl sm:text-4xl md:text-5xl font-bold hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-400 hover:bg-clip-text hover:text-transparent transition-all duration-500 transform ${isMenuOpen ? `translate-y-0 opacity-100` : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${index * 100 + 200}ms` }} onClick={() => setIsMenuOpen(false)}>{link.name}</a>
             ))}
           </div>
-           <div className="flex items-center space-x-8 mt-16">
-               <a href={user.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300"><Github size={28} /></a>
-               <a href={user.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300"><Linkedin size={28} /></a>
-               <a href={`mailto:${user.email}`} className="text-gray-400 hover:text-white transition-all duration-300"><Mail size={28} /></a>
+           <div className="flex items-center space-x-6 sm:space-x-8 mt-12 sm:mt-16">
+               <a href={user.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300"><Github size={24} /></a>
+               <a href={user.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300"><Linkedin size={24} /></a>
+               <a href={`mailto:${user.email}`} className="text-gray-400 hover:text-white transition-all duration-300"><Mail size={24} /></a>
             </div>
         </div>
       </div>
