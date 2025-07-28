@@ -26,7 +26,7 @@ const Portfolio = () => {
     email: "sirisharavindakumar@gmail.com",
     github: "https://github.com/sirish141",
     linkedin: "https://www.linkedin.com/in/sirish-aravindakumar-7126b732b/",
-    resumeUrl: "#" // Replace with the actual URL to your resume PDF
+    resumeUrl: "/SirishResume.pdf" // Link to resume in public folder
   };
 
   const navLinks = [
