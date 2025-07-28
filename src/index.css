@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+.font-sans { 
+  font-family: 'Inter', sans-serif; 
+}
+
+@keyframes gradient-shift { 
+  0%, 100% { background-position: 0% 50%; } 
+  50% { background-position: 100% 50%; } 
+}
+
+@keyframes gradient-pulse { 
+  0%, 100% { filter: hue-rotate(0deg); } 
+  50% { filter: hue-rotate(90deg); } 
+}
+
+@keyframes slide-up { 
+  from { transform: translateY(100%); opacity: 0; } 
+  to { transform: translateY(0); opacity: 1; } 
+}
+
+@keyframes fade-in-up { 
+  from { transform: translateY(30px); opacity: 0; } 
+  to { transform: translateY(0); opacity: 1; } 
+}
+
+@keyframes spin-slow { 
+  from { transform: rotate(0deg); } 
+  to { transform: rotate(360deg); } 
+}
+
+.animate-gradient-shift { 
+  animation: gradient-shift 4s ease infinite; 
+  background-size: 200% 200%; 
+}
+
+.animate-gradient-pulse { 
+  animation: gradient-pulse 3s ease infinite; 
+}
+
+.animate-slide-up { 
+  animation: slide-up 1s ease-out forwards; 
+  opacity: 0; 
+}
+
+.animate-fade-in-up { 
+  animation: fade-in-up 1s ease-out forwards; 
+  opacity: 0; 
+}
+
+.animate-spin-slow { 
+  animation: spin-slow 8s linear infinite; 
+}
