@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Navigation from './Navigation';
 import ParticleBackground from './ParticleBackground';
 import CustomCursor from './CustomCursor';
