@@ -36,7 +36,7 @@ const Portfolio = () => {
     { name: "Contact", href: "#contact" }
   ];
 
-  const aboutText = "I'm Sirish, a full-stack developer from Bangalore. My main drive is building impressive, fully-fledged web applications that look amazing and function flawlessly. As a fresher, I'm passionate about writing clean code, crafting beautiful UIs, and creating interactive websites. I'm always keen to learn new technologies, with a strong interest in cloud computing. My hobbies include traveling to cold, mountainous places, exploring new cafes, and gaming.";
+  const aboutText = "👋 Hello there!I’m Sirish Aravindakumar, a Full Stack Developer👨‍💻with a strong grasp of C, Python, and JavaScript. I’m passionate about building scalable, efficient, and user-focused applications. From crafting intuitive frontends to engineering solid backend systems, I enjoy working across the stack to bring ideas to life.I’m currently looking for new opportunities where I can contribute, grow, and collaborate with like-minded teams. Learning is a constant for me, and I love tackling real-world problems through clean, maintainable code.When I’m not coding, you’ll find me traveling or exploring new cafes. Let’s connect and build something great together!";
 
   const skills = [
     { name: "React", group: "Frontend" },
@@ -64,12 +64,12 @@ const Portfolio = () => {
       liveUrl: null // Add live demo URL here when available
     },
     {
-      title: "Etch-a-Sketch",
-      description: "An interactive browser-based sketchpad built with vanilla JavaScript. It dynamically generates a grid and uses mouse hover effects to simulate drawing, showcasing strong DOM manipulation skills.",
-      tech: ["HTML", "CSS", "JavaScript", "DOM"],
+      title: "Whispr App(Real Time Chat App)",
+      description: "Engineered a full-stack real-time chat application using the MERN stack, enabling authenticated users to engage in private and group conversations.",
+      tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.IO", "Tailwind CSS" ],
       color: "from-red-500 to-orange-500",
       year: "2025",
-      githubUrl: "https://github.com/sirish141/Etch-a-Sketch", // Assuming this is the repo, update if needed
+      githubUrl: null, // Assuming this is the repo, update if needed
       liveUrl: null
     }
   ];
